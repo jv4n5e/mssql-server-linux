@@ -1,7 +1,8 @@
 version: '3.7'
 
 services:
-  sqlserver1:
+  mssql-server-linux:
+    hostname: mssql-server-linux
     build: 
       context: .
       dockerfile: dockerfile
