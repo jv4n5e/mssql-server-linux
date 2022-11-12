@@ -6,6 +6,7 @@ services:
     build: 
       context: .
       dockerfile: dockerfile
+    user: root
     ports:  
       - "1433:1433"
     env_file:
