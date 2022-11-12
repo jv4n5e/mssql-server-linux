@@ -8,7 +8,7 @@ RUN useradd -u 10001 mssql
 RUN apt-get update && apt-get install -y wget software-properties-common apt-transport-https
 RUN wget -qO- https://packages.microsoft.com/keys/microsoft.asc | apt-key add -
 RUN add-apt-repository "$(wget -qO- https://packages.microsoft.com/config/ubuntu/20.04/mssql-server-2019.list)"
-RUN apt-get update && apt-get install -y mssql-server
+RUN apt-get update && apt-get install -y mssql-server && apt-get install -y mssql-tools
 
 # creating directories
 RUN mkdir /var/opt/sqlserver
