@@ -1,5 +1,0 @@
-  PID TTY      STAT   TIME COMMAND
-    1 ?        Ss     0:00 /bin/sh -c /opt/mssql/bin/sqlservr PATH=/usr/local/sb
-    7 ?        Sl     0:00 /opt/mssql/bin/sqlservr HOSTNAME=c6686b43a4bd HOME=/h
-    9 ?        Sl     0:31 /opt/mssql/bin/sqlservr HOSTNAME=c6686b43a4bd HOME=/h
-  403 pts/0    Rs+    0:00 ps -eax PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin
