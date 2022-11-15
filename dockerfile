@@ -6,6 +6,7 @@ USER root
 COPY ./docker-entrypoint.sh /root/docker-entrypoint.sh
 # RUN chown mssql -R /var/opt/sqlserver
 RUN chmod +x /root/docker-entrypoint.sh
+RUN mkdir -p /home/mssql
 # ENTRYPOINT ["/root/docker-entrypoint.sh"]
 
 ENV MSSQL_BACKUP_DIR="/var/opt/sqlserver"
